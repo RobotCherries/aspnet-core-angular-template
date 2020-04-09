@@ -16,7 +16,4 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic(providers).bootstrapModule(AppModule)
-  .catch(err => console.log(err));
-
-export { renderModule, renderModuleFactory } from '@angular/platform-server';
+platformBrowserDynamic(providers).bootstrapModule(AppModule).catch((err) => console.log(err));
